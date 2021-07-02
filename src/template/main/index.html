@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="description" content="선명한 FULL HDTV 우수한성능 정직한가격 TV의 정석 이엔티비 entv">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="이엔티비">
+    <meta property="og:description" content="선명한 FULL HDTV 우수한성능 정직한가격 TV의 정석 이엔티비 entv">
+    <meta property="og:image" content="http://img.entv.co.kr/entv_icon128x128.png?ver=1467623734">
+    <meta property="og:url" content="http://www.entv.co.kr">
+    <link rel="canonical" href="http://www.entv.co.kr"> <!-- 대표 URL -->
+
+    <title>이엔티비</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js_new/faq.js"></script>
+    <script type="text/javascript" src="http://www.entv.co.kr/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js_new/jquery.cookie.js?ver=1620010974"></script>
+    <script src="js_new/slides.min.jquery.js?ver=1620010974" type="text/javascript"></script>
+    <script src="js_new/jquery.slides.min.js?ver=1620010974" type="text/javascript"></script>
+
+    <!-- 다음 주소검색 -->
+    <script type="text/javascript" src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+
+    <script type="text/javascript" src="http://www.entv.co.kr/js/common2.js?ver=1620010974"></script>
+    <script type="text/javascript" src="http://www.entv.co.kr/js/brd.js?ver=1620010974"></script>
+
+    <!-- 네이버 로그 분석 스크립트 -->
+    <script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script>
+
+    <!-- Android icon -->
+    <link rel="shortcut icon" href="http://img.entv.co.kr/entv_icon128x128.png?ver=1620010974" />
+    <!-- iPhone icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://img.entv.co.kr/entv_icon57x57.png?ver=1620010974" />
+    <!-- iPad icon -->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://img.entv.co.kr/entv_icon72x72.png?ver=1620010974" />
+    <!-- iPhone icon(Retina) -->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://img.entv.co.kr/entv_icon114x114.png?ver=1620010974" />
+    <!-- iPad icon(Retina) -->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://img.entv.co.kr/entv_icon144x144.png?ver=1620010974" />
+    <script> document.domain = "entv.co.kr";</script>
+
+
+
+
+    <script language='JavaScript'>
+
+        $(document).ready(function () {
+
+            // 사장님요청으로 고객센터 메뉴 중 공지사항 우선출력 150810 김진우
+            entv.GoCsCenterTab('CsCenter5');
+
+            redrawDotNav();
+            parallaxScroll();
+            $('a.move-top').click(function () {
+                $('html, body').stop().animate({
+                    scrollTop: 0
+                }, 800, function () {
+                });
+                return false;
+            });
+
+            $('a.tab0').click(function () {
+
+                $(".tab1").attr("id", "sp");
+                $(".tab2").attr("id", "");
+                $(".tab3").attr("id", "");
+                $(".tab4").attr("id", "");
+                $(".tab5").attr("id", "");
+                $(".tab6").attr("id", "");
+
+                $("#mm000").attr("src", "http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm001").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+
+                $('html, body').stop().animate({
+                    scrollTop: 0
+                }, 800, function () {
+                });
+                return false;
+            });
+
+            $('a.tab1').click(function () {
+
+                $(".tab1").attr("id", "sp");
+                $(".tab2").attr("id", "");
+                $(".tab3").attr("id", "");
+                $(".tab4").attr("id", "");
+                $(".tab5").attr("id", "");
+                $(".tab6").attr("id", "");
+
+                $("#mm000").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src", "http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm002").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+
+                $('html, body').stop().animate({
+                    scrollTop: $('.special-container').offset().top - 65
+                }, 800, function () {
+                });
+                return false;
+            });
+            $('a.tab2').click(function () {
+
+                $(".tab1").attr("id", "");
+                $(".tab2").attr("id", "sp");
+                $(".tab3").attr("id", "");
+                $(".tab4").attr("id", "");
+                $(".tab5").attr("id", "");
+                $(".tab6").attr("id", "");
+
+                $("#mm000").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src", "http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm003").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+
+                $('html, body').stop().animate({
+                    scrollTop: $('.main-container').offset().top - 65
+                }, 800, function () {
+                });
+                return false;
+            });
+            $('a.tab3').click(function () {
+                $(".tab1").attr("id", "");
+                $(".tab2").attr("id", "");
+                $(".tab3").attr("id", "sp");
+                $(".tab4").attr("id", "");
+                $(".tab5").attr("id", "");
+                $(".tab6").attr("id", "");
+
+                $("#mm000").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src", "http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm004").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+
+                $('html, body').stop().animate({
+                    scrollTop: $('.detail-container').offset().top - 65
+                }, 800, function () {
+                });
+                return false;
+            });
+            $('a.tab4').click(function () {
+                $(".tab1").attr("id", "");
+                $(".tab2").attr("id", "");
+                $(".tab3").attr("id", "");
+                $(".tab4").attr("id", "sp");
+                $(".tab5").attr("id", "");
+                $(".tab6").attr("id", "");
+
+                $("#mm000").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src", "http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm005").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+
+                $('html, body').stop().animate({
+                    scrollTop: $('.display-container').offset().top - 65
+                }, 800, function () {
+                });
+                return false;
+            });
+            $('a.tab5').click(function () {
+                $(".tab1").attr("id", "");
+                $(".tab2").attr("id", "");
+                $(".tab3").attr("id", "");
+                $(".tab4").attr("id", "");
+                $(".tab5").attr("id", "sp");
+                $(".tab6").attr("id", "");
+
+                $("#mm000").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src", "http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src", "http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+
+                $('html, body').stop().animate({
+                    scrollTop: $('.news-container').offset().top - 65
+                }, 800, function () {
+                });
+                return false;
+            });
+
+            $(window).bind('scroll', function (e) {
+                redrawDotNav();
+                //		parallaxScroll();
+            });
+
+
+        });
+
+        function parallaxScroll() {
+            var scrolled = $(document).scrollTop();
+
+            if (scrolled == 0) {
+                $("#hedaer_wrap").css("top", "48px");
+            } else {
+                $("#hedaer_wrap").css("top", "0px");
+            }
+        }
+        //alert($("div #cs_wrap").height());
+        function redrawDotNav() {
+
+            var section1Top = 0;
+            var section2Top = 0;
+            var section3Top = 2600;
+            var section4Top = 3400;
+            var section5Top = 4300;
+            var section6Top = 5900;
+
+
+            //alert($(document).scrollTop());
+            /*if($(document).scrollTop() >= section1Top && $(document).scrollTop() < section2Top){
+                $(".tab1").attr("id","");
+                $(".tab2").attr("id","");
+                $(".tab3").attr("id","");
+                $(".tab4").attr("id","");
+                $(".tab5").attr("id","");
+                $(".tab6").attr("id","");
+        
+                $("#mm000").attr("src","http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm001").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+        
+            } else if ($(document).scrollTop() >= section2Top && $(document).scrollTop() < section3Top){
+                $(".tab1").attr("id","sp");
+                $(".tab2").attr("id","");
+                $(".tab3").attr("id","");
+                $(".tab4").attr("id","");
+                $(".tab5").attr("id","");
+                $(".tab6").attr("id","");
+        
+                $("#mm000").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src","http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm002").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+        
+            } else if ($(document).scrollTop() >= section3Top && $(document).scrollTop() < section4Top){
+                $(".tab1").attr("id","");
+                $(".tab2").attr("id","sp");
+                $(".tab3").attr("id","");
+                $(".tab4").attr("id","");
+                $(".tab5").attr("id","");
+                $(".tab6").attr("id","");
+        
+                $("#mm000").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src","http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm003").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+        
+            } else if ($(document).scrollTop() >= section4Top && $(document).scrollTop() < section5Top){
+                $(".tab1").attr("id","");
+                $(".tab2").attr("id","");
+                $(".tab3").attr("id","sp");
+                $(".tab4").attr("id","");
+                $(".tab5").attr("id","");
+                $(".tab6").attr("id","");
+        
+                $("#mm000").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src","http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm004").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+        
+            } else if ($(document).scrollTop() >= section5Top && $(document).scrollTop() < section6Top){
+                $(".tab1").attr("id","");
+                $(".tab2").attr("id","");
+                $(".tab3").attr("id","");
+                $(".tab4").attr("id","sp");
+                $(".tab5").attr("id","");
+                $(".tab6").attr("id","");
+        
+                $("#mm000").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src","http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+                $("#mm005").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+        
+            } else if ($(document).scrollTop() >= section6Top){
+                $(".tab1").attr("id","");
+                $(".tab2").attr("id","");
+                $(".tab3").attr("id","");
+                $(".tab4").attr("id","");
+                $(".tab5").attr("id","sp");
+                $(".tab6").attr("id","");
+        
+                $("#mm000").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm001").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm002").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm003").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm004").attr("src","http://img.entv.co.kr/renew/circle_off.png?ver=1620010974");
+                $("#mm005").attr("src","http://img.entv.co.kr/renew/circle_on.png?ver=1620010974");
+        
+            }*/
+        }
+
+
+    </script>
+
+    <script>
+        /*
+        $(function(){
+            $('#slides2').slides2({
+                preload: false,
+                preloadImage: '',
+                play: 4000,
+                pause: 4000,
+                hoverPause: true,
+                animationStart: function(current){
+                    $('.caption').animate({
+                        bottom:0
+                    },100);
+        
+                },
+                animationComplete: function(current){
+                    $('.caption').animate({
+                        bottom:0
+                    },100);
+                },
+        
+                slidesLoaded: function() {
+                    $('.caption').animate({
+                        bottom:0
+                    },200);
+                }
+            });
+        });
+        */
+    </script>
+
+    <script type="text/javascript">
+< !--
+            function MM_preloadImages() { //v3.0
+                var d = document; if (d.images) {
+                    if (!d.MM_p) d.MM_p = new Array();
+                    var i, j = d.MM_p.length, a = MM_preloadImages.arguments; for (i = 0; i < a.length; i++)
+                        if (a[i].indexOf("#") != 0) { d.MM_p[j] = new Image; d.MM_p[j++].src = a[i]; }
+                }
+            }
+        function MM_swapImgRestore() { //v3.0
+            var i, x, a = document.MM_sr; for (i = 0; a && i < a.length && (x = a[i]) && x.oSrc; i++) x.src = x.oSrc;
+        }
+        function MM_findObj(n, d) { //v4.01
+            var p, i, x; if (!d) d = document; if ((p = n.indexOf("?")) > 0 && parent.frames.length) {
+                d = parent.frames[n.substring(p + 1)].document; n = n.substring(0, p);
+            }
+            if (!(x = d[n]) && d.all) x = d.all[n]; for (i = 0; !x && i < d.forms.length; i++) x = d.forms[i][n];
+            for (i = 0; !x && d.layers && i < d.layers.length; i++) x = MM_findObj(n, d.layers[i].document);
+            if (!x && d.getElementById) x = d.getElementById(n); return x;
+        }
+
+        function MM_swapImage() { //v3.0
+            var i, j = 0, x, a = MM_swapImage.arguments; document.MM_sr = new Array; for (i = 0; i < (a.length - 2); i += 3)
+                if ((x = MM_findObj(a[i])) != null) { document.MM_sr[j++] = x; if (!x.oSrc) x.oSrc = x.src; x.src = a[i + 2]; }
+        }
+//-->
+    </script>
+
+    <!--	<link rel="stylesheet" href="http://static.entv.co.kr/css/reset.css?v=1620010974" type="text/css"/>		-->
+    <link rel="stylesheet" href="http://static.entv.co.kr/css/layout_new2.css?v=1620010974" type="text/css" />
+    <link href="http://static.entv.co.kr/css/reset.css?ver=1620010974" rel="stylesheet" type="text/css">
+    <link href="http://static.entv.co.kr/css/webfont.css?ver=1620010974" rel="stylesheet" type="text/css">
+    <link href="http://static.entv.co.kr/css/style_naver.css?ver=1620010974" rel="stylesheet" type="text/css">
+
+
+    <!--	
+	<link rel="stylesheet" href="http://www.entv.co.kr/css/reset.css?v=1620010974" type="text/css"/>		
+	<link rel="stylesheet" href="http://www.entv.co.kr/css/layout_new2.css?v=1620010974" type="text/css"/>
+	<link href="css_new/reset.css?ver=1620010974" rel="stylesheet" type="text/css">
+	<link href="css_new/webfont.css?ver=1620010974" rel="stylesheet" type="text/css">
+    <link href="css_new/style_naver.css?ver=1620010974" rel="stylesheet" type="text/css">
+-->
+
+</head>
+
+<body>
+
+    <div id="layout_wrap">
+        <!-- 헤더 -->
+        <div id="hedaer_wrap" style="z-index:1000;">
+            <div id="hedaer">
+                <h1><a href="http://www.entv.co.kr/" class="tab0"><img
+                            src="http://img.entv.co.kr/renew/logo.png?ver=1620010974" alt="menu1" border="0" /></a></h1>
+                <ul id="nav">
+                    <!--			<li><a href="#list_wrap" id="sp" class="left_line">제품소개</a></li>		-->
+                    <li><a href="http://www.entv.co.kr/?ee=SEcKMkw6Uz1Gbg5AUQ==" class="tab2">브랜드소개</a></li>
+                    <!-- <li><a href="http://www.entv.co.kr/?ee=UkERMHwyTy1Xbg5AUQ==" class="tab_enshop" >이엔티비샵</a></li> -->
+                    <li><a href="http://www.entv.co.kr/?ee=QlwNNEwzQywNMBZY" class="tab3">고객센터</a></li>
+                    <!-- <li><a href="http://www.entv.co.kr/?ee=R0gPblM2Vg==" class="tab4">자주하는질문</a></li> -->
+                    <li><a href="http://www.entv.co.kr/?ee=T0wJMw0uTi4=" class="tab5">언론기사</a></li>
+                    <li><a href="javascript:entv.GoOrderFindReNew();">주문/배송조회</a></li>
+                    <li class="btn-shop-box"><a href="https://smartstore.naver.com/entv" target="_blank"><img
+                                src="http://img.entv.co.kr/gnb_shop.png" alt="shop"></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- <div id="side_card">
+		<div id="card_img">
+			<div id="card_position">
+				<a href="http://www.entv.co.kr/?flag=cus#cs_center"><img src="http://img.entv.co.kr/renew/bn_left_shop1.png?ver=1620010974" alt="판매점모집"></a>
+				<a href="javascript:entv.GoGoCard();"><img src="http://img.entv.co.kr/renew/bn_left_card.jpg?ver=1620010974" alt="무이자카드"></a>
+				<img src="http://img.entv.co.kr/renew/bn_left_tel.png?ver=1620010974" alt="고객센터" style="padding-top:10px;">
+			</div>	
+		</div>
+	</div> -->
+
+        <div id='uppri_pop' style='position:absolute; top:0px; left:50%; width: 500; z-index:1000;display:block;'>
+            <div style='position:absolute; left:522px; top:25px'>
+                <iframe id="ebiz_counter" src="http://www.entv.co.kr/common/counter.php?enurl=www.entv.co.kr"
+                    width="340" height="190" frameborder="0" marginheight="0" marginwidth="0" scrolling="0"
+                    style="width:340px; position:absolute; top:22px; right:-350px;"></iframe>
+            </div>
+        </div>
+
+        <!-- 주문/배송 조회팝업 -->
+        <div id="pop_order" style="display:none;">
+            <form name="bform" method="post" action="?ee=TlsaJVEBVTtCMh1AEw9ZFjA=">
+                <span class="btn_order_close"><a href="javascript:entv.GoOrderFindReNewClose();"><img align="닫기"
+                            src="http://img.entv.co.kr/renew/btn_secret_close.gif?ver=1620010974"></a></span>
+                <input name="ordername"
+                    style="left: 110px; top: 107px; width: 120px; height: 25px; padding-left: 7px; position: absolute; border:1px solid #dcdcdc" />
+                <input name="orderNoNum"
+                    style="left: 110px; top: 142px; width: 120px; height: 25px; padding-left: 7px; position: absolute; border:1px solid #dcdcdc"
+                    OnKeyDown="javascript:if(event.keyCode == 13){ entv.GoBa(); }" />
+                <span class="btn_order_ok"><a href="javascript:entv.GoBa();"><img align="확인"
+                            src="http://img.entv.co.kr/renew/btn_oder_ok.gif?ver=1620010974"></a></span>
+            </form>
+        </div><!-- //주문/배송 조회팝업 -->
+
+        <!-- 사운드바 팝업 -->
+        <style type="text/css">
+            #footer_lp_soundbar {
+                clear: both;
+                width: 400px;
+                height: 30px;
+                background-color: #565656;
+                color: #ffffff;
+                font-size: 12px
+            }
+
+            #footer_lp_soundbar .one_day_lp_soundbar {
+                float: left;
+                margin: 3px 0 0 5px
+            }
+
+            #footer_lp_soundbar .close_lp_soundbar {
+                float: right;
+                margin: 5px 10px 0 0
+            }
+
+            #footer_lp_soundbar .close_lp_soundbar a {
+                color: #ffffff;
+                font-weight: bold;
+                text-decoration: none
+            }
+        </style>
+        <script>
+            function popup_lp_soundbar() {
+                if ($("#pop_close_lp_soundbar").is(":checked")) {
+                    $.cookie("popup_lp_soundbar", "done", { expires: 1, path: "/" });
+                }
+                $("#pop_order_lp_soundbar").hide();
+            }
+        </script>
+
+
+
+
+        <!-- 메인배너 롤링 -->
+
+        <div id="slides">
+            <!-- <div class="slides_container"> -->
+            <div class="slide">
+                <a href="https://smartstore.naver.com/entv" target="_blank">
+                    <img src="http://img.entv.co.kr/main/visual/main_01.jpg?ver=1620010974" alt="상품사진">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://smartstore.naver.com/entv" target="_blank">
+                    <img src="http://img.entv.co.kr/main/visual/main_02.jpg?ver=1620010974" alt="상품사진">
+                </a>
+            </div>
+            <div class="slide">
+                <a href="https://smartstore.naver.com/entv" target="_blank">
+                    <img src="http://img.entv.co.kr/main/visual/main_04.jpg?ver=1620010974" alt="상품사진">
+                </a>
+            </div>
+            <div class="slide">
+                <!-- <a href="?ee=UkERMHwyTy1Xbg5AUQ=="> -->
+                <a href="https://smartstore.naver.com/entv" target="_blank">
+                    <img src="http://img.entv.co.kr/main/visual/main_05.jpg?ver=1620010974" alt="상품사진">
+                </a>
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                var chk_slides = $('#slides').length;
+                if (chk_slides > 0) {
+                    $('#slides').slidesjs({
+                        width: 1920,
+                        height: 770,
+                        play: {
+                            auto: true,
+                            interval: 4000,
+                            swap: true,
+                            pauseOnHover: true,
+                        }
+                    });
+                }
+            });
+        </script>
+
+        <div id="list_wrap" class="special-container">
+            <div id="list">
+                <h2><img src="http://img.entv.co.kr/renew/list_1.jpg?ver=1620010974" alt="티비" border="0" usemap="#Map">
+                    <map name="Map">
+                        <area shape="rect" coords="4,305,506,816"
+                            href="https://smartstore.naver.com/entv/products/4178655746" target="_blank">
+                        <area shape="rect" coords="517,308,1011,822"
+                            href="https://smartstore.naver.com/entv/products/4993492323" target="_blank">
+                    </map>
+                </h2>
+                <div id="product_wrap">
+                    <div class="product_2"><img src="http://img.entv.co.kr/renew/list_3_new.jpg?ver=1620010974"
+                            alt="패키지" border="0" usemap="#Map3">
+                        <map name="Map3">
+                            <area shape="rect" coords="0,26,508,453" target="_blank"
+                                href="https://smartstore.naver.com/entv/products/356101407" alt="55+멜로우 사운드바"
+                                onfocus="this.blur()" onclick="this.blur()">
+                            <area shape="rect" coords="512,26,1020,453" target="_blank"
+                                href="https://smartstore.naver.com/entv/products/485847476" alt="32+스마트 사운드바"
+                                onfocus="this.blur()" onclick="this.blur()">
+                            <area shape="rect" coords="0,504,508,913" target="_blank"
+                                href="https://smartstore.naver.com/entv/products/2135100351" alt="55+커브드사운드바"
+                                onfocus="this.blur()" onclick="this.blur()">
+                            <area shape="rect" coords="512,504,1020,913" target="_blank"
+                                href="https://smartstore.naver.com/entv/products/4749635792" alt="32+커브드 사운드바"
+                                onfocus="this.blur()" onclick="this.blur()">
+                            <area shape="rect" coords="0,984,508,1410" target="_blank"
+                                href="https://smartstore.naver.com/entv/products/4993538163" alt="55+스마트 사운드바"
+                                onfocus="this.blur()" onclick="this.blur()">
+                            <area shape="rect" coords="512,984,1020,1410" target="_blank"
+                                href="https://smartstore.naver.com/entv/products/4993492323" alt="32+스마트 사운드바"
+                                onfocus="this.blur()" onclick="this.blur()">
+                        </map>
+                    </div>
+                    <div style="float:left; margin-top:40px">
+                        <a href="https://smartstore.naver.com/entv/products/356100191" target="_blank"><img
+                                src="http://img.entv.co.kr/banner_sg2100.jpg?ver=1620010974" alt="sg2100"
+                                border="0"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="service_info"><img src="http://img.entv.co.kr/renew/service_info.jpg?ver=1620010974"
+                alt="고객센터 전화번호, 무통장 입금정보"></div>
+
+        <div style="clear: both"></div>
+        <div id="footer">
+            <div id="address">
+                <p class="left">
+                    <span class="logo"><img src="http://img.entv.co.kr/renew/footer_logo.gif?ver=1495011195"
+                            alt="entv로고"></span>
+                    <!--  (주)바로네트웍스 I	대표이사 : 전병권 I 주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br/>
+			   			   				사업자등록번호 : 215-87-85373	I 통신판매업신고번호 : 제2017-서울강남-00561호<br/>
+			   			   				<br/> -->
+                    (주)이엔전자 I 대표이사 : 최재영 I 서울특별시 강남구 테헤란로82길 15,(대치동 DI타워 4층)<br>
+                    사업자등록번호 : 220-88-95318 I 통신판매업신고번호 : 제2019-서울강남-02623호 l 팩스번호 : 02-6255-3096<br />
+                    <br />
+                    <br />
+                    (주)이비즈 네트웍스 I 대표이사 : 박기범 I 서울특별시 강남구 테헤란로82길 15,(대치동 DI타워 9층)<br>
+                    사업자등록번호 : 220-87-30865 I 통신판매업신고번호 : 서울강남 -11501호 l 팩스번호 : 02-6255-3096<br />
+                    <br />
+                    COPYRIGHT ⓒ ENTV. ALL RIGHTS RESERVED.
+                </p>
+
+                <div class="right">
+                    <span class="tel">
+                        <a href="/?ee=QlwNNEwzQywNMBZY&custom_num=faq" alt="faq">
+                            <img src="http://img.entv.co.kr/renew/footer_tel.gif?ver=1620010974" alt="상담전화">
+                        </a>
+                    </span>
+
+                    <style type="text/css">
+                        .right_txt a {
+                            color: #a8a9ab;
+                        }
+
+                        #family_list {
+                            width: 120px;
+                        }
+
+                        #family_site {
+                            width: 120px;
+                        }
+
+                        .fam_btn_m {
+                            width: 114px;
+                        }
+
+                        .fam_btn {
+                            width: 120px;
+                        }
+                    </style>
+
+                    <div class="right_txt">
+                        <a href="?ee=UVsRNkotTzFNbg5AUQ==">이용약관</a> I <a href="?ee=UVsXNkI9X3BTKA4=">개인정보처리방침</a>
+                        <div id="family_site">
+                            <div class="fam_btn_m"><a href="javascript:entv.click_family();">family
+                                    site&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▲</a></div>
+                            <ul id="family_list" style="max-height:none;">
+                                <li>
+                                    <div class="fam_btn" style="width:120px;"><a href="http://www.ebiznetworks.co.kr/"
+                                            target="_blank">이비즈네트웍스</a></div>
+                                </li>
+                                <li style='margin-top:10px;'>
+                                    <div class="fam_btn" style='font-weight:bold; color:#ffffff;width:120px;'>[ 커머스 ]
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fam_btn" style='width:120px;'><b style='color:#ff0000;'>이엔티비</b></div>
+                                </li>
+                                <li>
+                                    <div class="fam_btn" style='width:120px;'><a href="http://www.nurisoop.co.kr"
+                                            target="_blank">누리숲</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div><!-- //right 끝-->
+                <div style="clear: both"></div>
+                <div style="margin-top: 10px;">
+                    <img src="http://img.entv.co.kr/renew/footer_mark01.png?ver=1495011195" alt="기술보증">
+                    <img src="http://img.entv.co.kr/renew/footer_mark02.png?ver=1495011195" alt="기술혁신형중소기업">
+                    <img src="http://img.entv.co.kr/renew/footer_mark03.png?ver=1495011195" alt="병역특례업체">
+                    <a href="javascript:pop.open('certificate.jpg', '500', '707');"><img
+                            src="http://img.entv.co.kr/renew/footer_mark04.png?ver=1495011195" alt="모범납세인증"></a>
+                    <img src="http://img.entv.co.kr/renew/footer_mark05.png?ver=1495011195" alt="서울모범납세인증">
+                    <img style="cursor: pointer;" onClick="javascript:onopen();return false;"
+                        src="http://img.entv.co.kr/renew/footer_gong.png?ver=1495011195" border="0" alt="공정거래위원회">
+                    <img style="cursor: pointer;" onClick="javascript:onPopKBAuthMark();return false;"
+                        src="http://img.entv.co.kr/renew/footer_escrowcmark.png?ver=1495011195" border="0"
+                        alt="KB에스크로이체">
+                    <!-- KB에스크로 이체 인증마크 적용 시작 -->
+                    <script>
+                        function onPopKBAuthMark() {
+                            window.open('', 'KB_AUTHMARK', 'height=604, width=648, status=yes, toolbar=no, menubar=no,location=no');
+                            document.KB_AUTHMARK_FORM.action = 'https://okbfex.kbstar.com/quics';
+                            document.KB_AUTHMARK_FORM.target = 'KB_AUTHMARK';
+                            document.KB_AUTHMARK_FORM.submit();
+                        }
+                    </script>
+                    <form name="KB_AUTHMARK_FORM" method="get">
+                        <input name="page" type="hidden" value="C021590">
+                        <input name="cc" type="hidden" value="b034066:b035526">
+                        <input name="mHValue" type="hidden" value="2580dd5e70a2daffa8aac8a3dadddf65201504061139828">
+                    </form>
+                    <!-- KB에스크로이체 인증마크 적용 종료 -->
+                </div>
+
+
+            </div><!-- //address 끝-->
+        </div>
+
+        <div id="loadcard"
+            style="width:100%; display:none; POSITION:absolute;z-index:99999999999;top:150px;text-align:left;">
+            <div class="lpop_wrap2" id="free_interest_layer">
+                <div class="lpop_cont">
+                    <h3>
+                        <img src="http://img.entv.co.kr/card_tit_0.gif" align="무이자 할부 혜택 안내" /><br />
+                        <span style="color:#666; margin-top:7px">- 기간 : 2021년 05월 01일 ~ 2021년 05월 31일</span>
+                    </h3>
+                    <a href="javascript:entv.GoCardClose();" class="btn_clse"><img
+                            src="http://img.entv.co.kr/btn_close.jpg" /></a>
+                    <table width="410" class="cp_lst card_type" border="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="scroll" style="width: 410px; height: 323px;">
+                                        <table width="410" border="0" cellspacing="0">
+                                            <tbody class="td_type1">
+                                                <div
+                                                    style="text-align:left; padding:10px 0;  border-top:1px solid #ddd; border-left:1px solid #ddd;  border-bottom:1px solid #ddd; background:#eee">
+                                                    <img src="http://img.entv.co.kr/card_tit_1.gif" align="무이자할부" />
+                                                </div>
+
+
+                                                <tr>
+                                                    <th class="card" scope="rowgroup"><span class="ss">삼성카드</span></th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~5개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" scope="rowgroup"><span class="hd">현대카드</span></th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~5개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" scope="rowgroup"><span class="kb">KB국민카드</span>
+                                                    </th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~5개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" scope="rowgroup"><span class="sh">신한카드</span></th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~5개월</td>
+                                                </tr>
+
+
+
+                                                <tr>
+                                                    <th class="card" scope="rowgroup"><span class="lt">롯데카드</span></th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~5개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" scope="rowgroup"><span class="bc">BC카드</span></th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~5개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" scope="rowgroup"><span class="nh">농협카드</span></th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~6개월</td>
+                                                </tr>
+
+                                                <tr class="card">
+                                                    <th class="card" scope="rowgroup"><span class="ct">씨티카드</span></th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~3개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" scope="rowgroup"><span class="hn">하나SK카드</span>
+                                                    </th>
+                                                    <td class="al1">5만원 이상</td>
+                                                    <td class="al2">2~5개월</td>
+                                                </tr>
+
+                                                <!--------- 부분 무이자할부 -------------->
+                                                <tr>
+                                                    <td colspan="3"
+                                                        style="text-align:left;  border-top:1px solid #ddd; background:#eee">
+                                                        <img src="http://img.entv.co.kr/card_tit_2.gif"
+                                                            align="부분 무이자할부" /></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="4" scope="rowgroup"><span
+                                                            class="ss">삼성카드</span></th>
+                                                    <td rowspan="4" class="al1">5만원 이상</td>
+                                                    <td class="al1">6,10,12개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="al2">6개월 1회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">10개월 1,2회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">12개월 1,2,3회차 고객부담</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="3" scope="rowgroup"><span
+                                                            class="hd">현대카드</span></th>
+                                                    <td rowspan="3" class="al1">5만원 이상</td>
+                                                    <td class="al1">6,10개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="al2">6개월 1회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">10개월 1,2회차 고객부담</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="3" scope="rowgroup"><span
+                                                            class="kb">KB국민카드</span></th>
+                                                    <td rowspan="3" class="al1">5만원 이상</td>
+                                                    <td class="al1">6,10개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="al2">6개월 1회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">10개월 1,2회차 고객부담</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="3" scope="rowgroup"><span
+                                                            class="sh">신한카드</span></th>
+                                                    <td rowspan="3" class="al1">5만원 이상</td>
+                                                    <td class="al1">6,10개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="al2">6개월 1회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">10개월 1,2회차 고객부담</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="3" scope="rowgroup"><span
+                                                            class="lt">롯데카드</span></th>
+                                                    <td rowspan="3" class="al1">5만원 이상</td>
+                                                    <td class="al1">6,10개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="al2">6개월 1회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">10개월 1,2회차 고객부담</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="4" scope="rowgroup"><span
+                                                            class="bc">BC카드</span></th>
+                                                    <td rowspan="4" class="al1">5만원 이상</td>
+                                                    <td class="al1">6,7,8,9,10,11,12개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="al2">6개월 1회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">7,8,9,10개월 1,2회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">11,12개월 1,2,3회차 고객부담</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="3" scope="rowgroup"><span
+                                                            class="nh">농협카드</span></th>
+                                                    <td rowspan="3" class="al1">5만원 이상</td>
+                                                    <td class="al1">7,8,9,10,11,12개월</td>
+                                                </tr>
+
+                                                <!--<tr>
+                                  <td class="al2">6개월 1회차 고객부담</td>
+                                </tr>-->
+                                                <tr>
+                                                    <td class="al2">7,8,9,10개월 1,2회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">11,12개월 1,2,3회차 고객부담</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="3" scope="rowgroup"><span
+                                                            class="hn">하나SK카드</span></th>
+                                                    <td rowspan="3" class="al1">5만원 이상</td>
+                                                    <td class="al1">6,10개월</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="al2">6개월 1회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">10개월 1,2회차 고객부담</td>
+                                                </tr>
+
+
+
+                                                <tr>
+                                                    <td colspan="3"
+                                                        style="text-align:left;  border-top:1px solid #ddd; background:#eee">
+                                                        <img src="http://img.entv.co.kr/card_tit_3.gif"
+                                                            align="신청 고객 무이자할부" />
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td colspan="3" style="text-align:left;">
+                                                        사전 신청한 고객에 한함 <br />
+                                                        BC카드 : ☎1899-5772 / 하나BC카드제외 <br />
+                                                        NH농협카드 : ☎1644-2009
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <th class="card" rowspan="4" scope="rowgroup"><span
+                                                            class="bc">BC카드</span></th>
+                                                    <td rowspan="4" class="al1">5만원 이상</td>
+                                                    <td class="al1">2~5개월 무이자 할부</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">6개월 1회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">7,8,9,10개월 1,2회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">11,12개월 1,2,3회차 고객부담</td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <th class="card" rowspan="3" scope="rowgroup"><span
+                                                            class="nh">NH농협카드</span></th>
+                                                    <td rowspan="3" class="al1">5만원 이상</td>
+                                                    <td class="al1">2~6개월 무이자 할부</td>
+                                                </tr>
+                                                <!--<tr>
+                                  <td class="al2">6개월 1회차 고객부담</td>
+                                </tr>-->
+                                                <tr>
+                                                    <td class="al2">7,8,9,10개월 1,2회차 고객부담</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="al2">11,12개월 1,2,3회차 고객부담</td>
+                                                </tr>
+
+                                        </table>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p style="margin-top:15px; color:#666; line-height:1.4">
+                        * 유의사항<br />
+                        1. 법인/체크/선불/기프트/은행계열카드 제외 <br />
+                        2. 직계약 직계약 가맹점, 상점부담 무이자 가맹점, 특별제휴가맹점,<br />
+                        오프라인 가맹점, 신규 가맹점 등 일부 제외 <br />
+                        3. 본 행사는 카드사 사정에 따라 변경 또는 중단될 수 있음 <br />
+                        4.무이자할부 결제 시 포인트, 마일리지 적립 제외<br />
+                        <br />
+                    </p>
+                </div>
+                </td>
+                </tr>
+
+                </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-61122738-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    </div>
+
+    <div id='chk_keyword'>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <h1>[이엔티비] ,</h1>
+        <style>
+            #chk_keyword {
+                display: none
+            }
+
+            #chk_keyword h1 {
+                color: #ffffff
+            }
+        </style>
+    </div>
+
+
+    <!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+    <script type="text/javascript" src="http://wcs.naver.net/wcslog.js"> </script>
+    <script type="text/javascript">
+        if (!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "s_3c4945e00ce";
+        if (!_nasa) var _nasa = {};
+        wcs.inflow("entv.co.kr");
+        wcs_do(_nasa);
+    </script>
+
+
+
+</body>
+
+</html>
